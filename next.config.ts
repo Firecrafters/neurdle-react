@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Output for Cloudflare Workers/Pages
-  output: 'export',
+  // Remove output: 'export' for OpenNext - it handles this automatically
   trailingSlash: true,
   images: {
     unoptimized: true
@@ -32,3 +31,7 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+// Initialize OpenNext for development
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+initOpenNextCloudflareForDev();

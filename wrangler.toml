@@ -1,8 +1,23 @@
 name = "neurdle"
-compatibility_date = "2024-09-21"
-pages_build_output_dir = "./out"
+main = ".open-next/worker.js"
+compatibility_date = "2024-12-30"
+compatibility_flags = [
+  # Enable Node.js API
+  "nodejs_compat",
+  # Allow to fetch URLs in your app  
+  "global_fetch_strictly_public"
+]
 
-# Pages environment configuration
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[services]]
+binding = "WORKER_SELF_REFERENCE"
+# The service should match the "name" of your worker
+service = "neurdle"
+
+# Environment variables for production
 [env.production.vars]
 NODE_ENV = "production"
 NEXT_PUBLIC_GTM_ID = "GTM-MGP4QGR2"
