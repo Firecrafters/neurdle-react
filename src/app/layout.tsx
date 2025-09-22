@@ -64,7 +64,6 @@ export default function RootLayout({
             }}>
           </iframe>
         </noscript>
-
         {children}
       </body>
     </html>

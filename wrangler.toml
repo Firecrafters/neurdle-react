@@ -1,0 +1,14 @@
+name = "neurdle"
+compatibility_date = "2024-09-21"
+
+[env.production]
+name = "neurdle"
+route = { pattern = "neurdle.pages.dev", zone_name = "pages.dev" }
+
+[env.production.vars]
+NODE_ENV = "production"
+
+# You can add more environment variables here for production
+# Example:
+# DATABASE_URL = "your_production_database_url"
+# API_SECRET_KEY = "your_production_secret_key"
