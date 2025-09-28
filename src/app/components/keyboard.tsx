@@ -1,3 +1,5 @@
+// TODO: Fix this file
+
 import { ReactElement, useRef, useState } from "react";
 
 
@@ -33,7 +35,7 @@ export default function Keyboard() {
                 button.setAttribute("data-key", key.length === 1 ? key : "");
                 button.setAttribute("aria-label", key === "BACKSPACE" ? "Backspace" : (key === "ENTER" ? "Enter" : key));
                 button.textContent = key === "BACKSPACE" ? "⌫" : (key === "ENTER" ? "Enter" : key);
-                button.addEventListener("click", (): void => handleKey(key));
+                // button.addEventListener("click", (): void => handleKey(key));
                 if (row.el && row.el.key) {
                     const index = parseInt(row.el.key.split("-")[2]) - 1;
                     if (rowRefs[index].current) {
