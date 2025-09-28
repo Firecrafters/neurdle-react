@@ -14,21 +14,21 @@
   },
   "dependencies": {
     "next": "15.5.3",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@opennextjs/cloudflare": "^1.8.3",
-    "@types/node": "^20",
+    "@opennextjs/cloudflare": "^1.9.0",
+    "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/eslint-plugin": "^8.44.1",
     "@typescript-eslint/parser": "^8.44.0",
     "concurrently": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
-    "sass": "^1.93.0",
+    "sass": "^1.93.2",
     "stylelint": "^16.24.0",
     "stylelint-config-standard-scss": "^16.0.0",
     "typescript": "^5",
