@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import "./globals.css";
+import "../../public/styles/main.css";
 
 // Environment variables for tracking IDs
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-MGP4QGR2';

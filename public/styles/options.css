@@ -1,0 +1,32 @@
+#options {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  transition: all 0.3s ease;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  z-index: 5;
+}
+.option:hover:not(:disabled) {
+  background: var(--option-bg);
+  border-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.option > img {
+  transition: all 0.3s ease;
+  width: 50px;
+}
+
+/*# sourceMappingURL=options.css.map */

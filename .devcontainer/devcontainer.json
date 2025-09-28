@@ -1,0 +1,39 @@
+{
+	"name": "Neurdle Next.js Dev Container",
+	"dockerFile": "Dockerfile",
+	"forwardPorts": [3000, 3001],
+	"appPort": [3000, 3001],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.vscode-typescript-next",
+				"bradlc.vscode-tailwindcss",
+				"ms-vscode.vscode-json",
+				"esbenp.prettier-vscode",
+				"ms-vscode.vscode-eslint",
+				"stylelint.vscode-stylelint",
+				"ms-vscode.vscode-css",
+				"syler.sass-indented",
+				"formulahendry.auto-rename-tag",
+				"christian-kohler.path-intellisense",
+				"ms-vscode.vscode-docker",
+				"mutantdino.resourcemonitor",
+				"mrmlnc.vscode-scss"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"typescript.preferences.importModuleSpecifier": "relative",
+				"editor.formatOnSave": true,
+				"editor.codeActionsOnSave": {
+					"source.fixAll.eslint": "explicit"
+				}
+			}
+		}
+	},
+	"postCreateCommand": "bun install",
+	"remoteUser": "node",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	}
+}

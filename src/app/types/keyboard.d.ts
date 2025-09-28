@@ -1,0 +1,1 @@
+export type KeyboardStatus = "absent" | "present" | "correct";
